@@ -1,0 +1,101 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #779f8f;
+    color: #000000;
+}
+
+h1, h2, h3, h4, p {
+    margin-left: 20px;
+}
+
+h1 {
+    color: #010101;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color: #000000;
+    border-bottom: 2px solid #3d536a;
+    padding-bottom: 0.3em;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px;
+}
+
+li {
+    padding: 5px 0;
+}
+
+a, button {
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #986430;
+    border: none;
+    padding: 1px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a:hover, button:hover {
+    background-color: #a97a5b;
+}
+
+.education-entry {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-left: 20px; /* Ensure it aligns with other elements */
+}
+
+.education-title {
+    font-size: 1.17em; /* Mimics h3 size */
+}
+
+.education-date {
+    font-size: 0.83em;
+}
+
+.job-entry {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-left: 20px; /* Ensure it aligns with other elements */
+}
+
+.job-title {
+    font-size: 1.17em; /* Mimics h3 size */
+}
+
+.company-name {
+    font-size: 1em; /* Mimics h4 size */
+}
+
+.job-dates {
+    font-size: 0.83em;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    h1, h2, h3, h4, p, .job-entry {
+        margin-left: 10px;
+    }
+    
+    img {
+        width: 80%;
+        height: auto;
+    }
+}
