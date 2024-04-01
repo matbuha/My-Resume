@@ -37,20 +37,27 @@ li::before {
     margin-left: -1em;
 }
 
-
-.profile-picture, img {
+img {
     display: inline-block;
-    box-shadow: 1px 1px 1px 1px rgb(253, 253, 253);
+    margin: 5px 5px;
+    border-color: #000000;
+    border-radius: 50%;
+}
+
+.profile-picture {
+    display: inline-block;
     margin: 5px 5px;
     padding-inline: 5px 5px;
+    border-color: #000000;
     border-radius: 50%;
 }
 
 .profile-picture:hover, img:hover {
     display: inline-block;
-    box-shadow: 3px 3px 3px 3px rgb(153, 255, 240);
+    box-shadow: 3px 3px 3px 3px rgb(131, 255, 201);
     margin: 5px 5px;
     border-radius: 50%;
+    border-color: #000000;
     transition: box-shadow 0.5s ease;
 }
 
