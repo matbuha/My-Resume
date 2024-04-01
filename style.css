@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #779f8f;
+    background-color: #4c8491;
     color: #000000;
 }
 
@@ -22,37 +22,55 @@ h2 {
     padding-bottom: 0.3em;
 }
 
-img {
-    display: block;
-    margin: 20px auto;
+ul {
+    list-style: none; /* Continues to remove default bullets */
+    padding-left: 0;
+    margin-left: 40px;
+}
+
+li::before {
+    content: "•"; /* Unicode character for bullet */
+    color: #000000; /* Choose a color that fits your design */
+    display: inline-block; 
+    width: 1em; /* Ensure alignment of bullets and text */
+    margin-left: -1em;
+}
+
+
+.profile-picture, img {
+    display: inline-block;
+    box-shadow: 1px 1px 1px rgb(253, 253, 253);
+    border: #000000;
+    margin: 20px;
+    padding: 0%;
     border-radius: 50%;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 30px;
-}
-
-li {
-    padding: 5px 0;
-}
-
-a, button {
+.profile-picture:hover, img:hover {
     display: inline-block;
+    box-shadow: 5px 5px 5px 5px rgb(253, 253, 253);
+    transition: box-shadow 0.5s ease;
+}
+
+.button {
+    display: inline-block;
+    box-shadow: 2px 2px 2px 2px #35475b;
     margin: 20px;
+    padding: 10px 20px; /* Adjusted padding for better appearance */
     text-decoration: none;
-    color: white;
-    background-color: #986430;
-    border: none;
-    padding: 1px 20px;
+    color: rgb(255, 255, 255); /* This will be the text color */
+    background-color: #4640c7; /* Default background color */
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.4s ease; /* Smooth transition for hover effect */
 }
 
-a:hover, button:hover {
-    background-color: #a97a5b;
+.button:hover {
+    background-color: #302b88; /* Darker shade on hover */
+    color:  rgb(194, 194, 194);
 }
+
+
 
 .education-entry {
     display: flex;
